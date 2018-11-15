@@ -1,0 +1,65 @@
+.scale {
+  animation: bounce 10s infinite;
+  -webkit-animation: bounce 10s infinite;
+  -moz-animation: bounce 10s infinite;
+  -o-animation: bounce 10s infinite;
+}
+
+.scale-with-delay {
+  animation: bounce 10s infinite;
+  -webkit-animation: bounce 10s infinite;
+  -moz-animation: bounce 10s infinite;
+  -o-animation: bounce 10s infinite;
+    
+  -moz-animation-delay: 5s;
+  -webkit-animation-delay: 5s;
+  -o-animation-delay: 5s;
+}
+
+@-moz-keyframes bounce {
+  0%,45% {
+    -moz-transform: scale(1);
+  }
+  50% {
+    -moz-transform: scale(1.1);
+  }
+  55%,100% {
+    -moz-transform: scale(1);
+  }
+}
+
+@-webkit-keyframes bounce {
+  0%,45% {
+    -webkit-transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+  }
+  55%,100% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@-o-keyframes bounce {
+  0%,45% {
+    -o-transform: scale(1);
+  }
+  50% {
+    -o-transform: scale(1.1);
+  }
+  55%,100% {
+    -o-transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%,45% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  55%,100% {
+    transform: scale(1);
+  }
+}
